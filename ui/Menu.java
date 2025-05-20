@@ -80,7 +80,7 @@ public class Menu {
         EstadoCultivo estado = EstadoCultivo.valueOf(scanner.nextLine().toUpperCase());
 
         gestorCultivos.crearCultivo(nombre, variedad, superficie, parcela, fecha, estado);
-        System.out.println("✅ Cultivo creado.");
+        System.out.println("Cultivo creado.");
     }
 
     private void editarCultivo() {

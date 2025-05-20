@@ -24,7 +24,7 @@ public class CSVParser {
 
             String nombre = partes[1];
             String variedad = partes[2];
-            double superficie = Double.parseDouble(partes[3]);
+            double superficie = Double.parseDouble(partes[3].replace(",", "."));
             String parcela = partes[4];
             LocalDate fechaSiembra = LocalDate.parse(partes[5], FORMATTER);
             EstadoCultivo estado = EstadoCultivo.valueOf(partes[6]);
